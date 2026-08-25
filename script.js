@@ -80,3 +80,4 @@ const finalAmount = subtotal - discountAmount + deliveryFee;
 const output = `MINI STORE CHECKOUT SYSTEM\n\nCustomer: ${customerName}\n\n${productList}ORDER SUMMARY\nSubtotal: ₱${formatMoney(subtotal)}\nDiscount Rate: ${discountRate}%\nDiscount Amount: ₱${formatMoney(discountAmount)}\nDelivery Type: ${deliveryType}\nDelivery Fee: ₱${formatMoney(deliveryFee)}\nFinal Amount: ₱${formatMoney(finalAmount)}`;
 
 console.log(output);
+document.getElementById("output").textContent = output;
